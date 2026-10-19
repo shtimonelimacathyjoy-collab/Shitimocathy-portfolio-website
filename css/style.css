@@ -1,0 +1,46 @@
+/* Palette: ink #12355b (main), amber #ffb703 (accent), mist #f3f5f7 (neutral) */
+:root {
+  --ink: #12355b;
+  --accent: #ffb703;
+  --mist: #f3f5f7;
+  --bs-body-font-family: 'Inter', system-ui, sans-serif;
+  --bs-body-bg: var(--mist);
+  --bs-body-color: #1d2733;
+  --bs-link-color: var(--ink);
+}
+h1, h2, h3, h4, h5, .navbar-brand { font-family: 'Bricolage Grotesque', 'Inter', sans-serif; font-weight: 800; color: var(--ink); }
+.site-nav { background: var(--ink); }
+.site-nav .navbar-brand { color: #fff; }
+.site-nav .nav-link { color: rgba(255,255,255,.8); }
+.site-nav .nav-link:hover, .site-nav .nav-link.active { color: var(--accent); }
+.site-nav .navbar-toggler { border-color: rgba(255,255,255,.5); }
+.site-nav .navbar-toggler-icon { filter: invert(1); }
+
+.hero { background: linear-gradient(135deg, var(--ink), #0b2038); color: #fff; padding: 7rem 0; }
+.hero h1 { color: #fff; max-width: 18ch; border-left: .4rem solid var(--accent); padding-left: 1.25rem; }
+.hero .lead { max-width: 55ch; margin: 1.5rem 0 2rem; }
+.hero-photo { border-radius: 1rem; border: .3rem solid var(--accent); max-height: 420px; object-fit: cover; box-shadow: 0 1rem 2.5rem rgba(0,0,0,.35); }
+
+.btn-accent { background: var(--accent); color: var(--ink); font-weight: 500; border: 0; }
+.btn-accent:hover { background: #e6a400; color: var(--ink); }
+.accent-icon { color: var(--accent); }
+
+.card { border: 0; border-radius: .75rem; }
+.hover-lift { transition: transform .2s ease, box-shadow .2s ease; }
+.hover-lift:hover { transform: translateY(-6px); box-shadow: 0 .75rem 1.5rem rgba(18,53,91,.15); }
+
+.section-dark { background: var(--ink); color: #fff; }
+.section-dark h2, .section-dark h3 { color: #fff; }
+.progress { height: .75rem; background: rgba(255,255,255,.2); }
+.progress-bar { background: var(--accent); }
+.badge-soft { background: rgba(255,255,255,.15); font-weight: 500; font-size: 1rem; padding: .5rem .9rem; border-radius: 2rem; }
+
+.headshot { max-width: 260px; border: .3rem solid var(--accent); }
+.gallery-img { aspect-ratio: 4/3; object-fit: cover; width: 100%; background: #dde3ea; }
+figcaption { color: #5a6877; }
+
+.site-footer { background: #0b2038; color: rgba(255,255,255,.8); }
+.site-footer a { color: #fff; text-decoration: none; }
+.site-footer a:hover { color: var(--accent); }
+
+@media (prefers-reduced-motion: reduce) { .hover-lift { transition: none; } .hover-lift:hover { transform: none; } }
